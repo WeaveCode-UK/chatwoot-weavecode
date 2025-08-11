@@ -1,0 +1,16 @@
+email,name,password,userId
+test.user1@weavecode.co.uk,Test User 1,password123,user-001
+test.user2@weavecode.co.uk,Test User 2,password123,user-002
+test.user3@weavecode.co.uk,Test User 3,password123,user-003
+test.user4@weavecode.co.uk,Test User 4,password123,user-004
+test.user5@weavecode.co.uk,Test User 5,password123,user-005
+test.user6@weavecode.co.uk,Test User 6,password123,user-006
+test.user7@weavecode.co.uk,Test User 7,password123,user-007
+test.user8@weavecode.co.uk,Test User 8,password123,user-008
+test.user9@weavecode.co.uk,Test User 9,password123,user-009
+test.user10@weavecode.co.uk,Test User 10,password123,user-010
+agent1@weavecode.co.uk,Agent One,password123,agent-001
+agent2@weavecode.co.uk,Agent Two,password123,agent-002
+agent3@weavecode.co.uk,Agent Three,password123,agent-003
+admin1@weavecode.co.uk,Admin One,password123,admin-001
+admin2@weavecode.co.uk,Admin Two,password123,admin-002

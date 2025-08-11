@@ -1,0 +1,16 @@
+name,domain,plan
+Test Company 1,test1.weavecode.co.uk,FREE
+Test Company 2,test2.weavecode.co.uk,STARTER
+Test Company 3,test3.weavecode.co.uk,PROFESSIONAL
+Test Company 4,test4.weavecode.co.uk,ENTERPRISE
+Test Company 5,test5.weavecode.co.uk,FREE
+Test Company 6,test6.weavecode.co.uk,STARTER
+Test Company 7,test7.weavecode.co.uk,PROFESSIONAL
+Test Company 8,test8.weavecode.co.uk,ENTERPRISE
+Test Company 9,test9.weavecode.co.uk,FREE
+Test Company 10,test10.weavecode.co.uk,STARTER
+Demo Company 1,demo1.weavecode.co.uk,PROFESSIONAL
+Demo Company 2,demo2.weavecode.co.uk,ENTERPRISE
+Demo Company 3,demo3.weavecode.co.uk,STARTER
+Demo Company 4,demo4.weavecode.co.uk,FREE
+Demo Company 5,demo5.weavecode.co.uk,PROFESSIONAL

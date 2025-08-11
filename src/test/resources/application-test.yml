@@ -1,0 +1,90 @@
+spring:
+  application:
+    name: chatwoot-backend-test
+  
+  # Test Database Configuration
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+  
+  # JPA Configuration for Tests
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: false
+        jdbc:
+          batch_size: 10
+        order_inserts: true
+        order_updates: true
+  
+  # Disable Flyway for tests
+  flyway:
+    enabled: false
+  
+  # Redis Configuration for Tests
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 1
+      timeout: 1000ms
+      lettuce:
+        pool:
+          max-active: 4
+          max-idle: 4
+          min-idle: 0
+          max-wait: -1ms
+  
+  # Security Configuration for Tests
+  security:
+    user:
+      name: testadmin
+      password: testpass123
+
+# JWT Configuration for Tests
+app:
+  jwt:
+    secret: test-jwt-secret-key-for-testing-purposes-only-256-bits
+    expiration: 3600000
+
+# Server Configuration for Tests
+server:
+  port: 0 # Random port for tests
+  servlet:
+    context-path: /
+
+# Logging Configuration for Tests
+logging:
+  level:
+    com.weavecode.chatwoot: DEBUG
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  pattern:
+    console: "%d{HH:mm:ss} - %msg%n"
+
+# Actuator Configuration for Tests
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+
+# Test-specific configurations
+test:
+  data:
+    cleanup: true
+    seed: true
+  performance:
+    enabled: false
+    timeout: 30000
